@@ -1,0 +1,12 @@
+nav {
+    background-color: $background;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+
+    .navIcon {
+        color: white;
+        font-size: 20px;
+        cursor: pointer;
+    }
+}
