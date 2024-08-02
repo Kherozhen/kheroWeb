@@ -6,6 +6,7 @@ function Header() {
 
     return(
         <nav>
+            <h1>KhéroWeb</h1>
             <FontAwesomeIcon
                 className="navIcon"
                 icon={ faBars }

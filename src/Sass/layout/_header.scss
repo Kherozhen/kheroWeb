@@ -1,12 +1,12 @@
 nav {
-    background-color: $background;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     padding: 20px;
+    border-bottom: 1px solid white;
 
     .navIcon {
         color: white;
-        font-size: 20px;
+        font-size: 30px;
         cursor: pointer;
     }
 }

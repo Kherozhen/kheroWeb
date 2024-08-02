@@ -1,0 +1,24 @@
+
+.about {
+    background-color: $background;
+    text-align: center;
+    padding-bottom: 40px;
+    
+    .aboutContainer {
+        
+        .aboutText {
+            display:flex;
+            justify-content: center;
+            gap: 10px;
+            font-size: 18px;
+            padding-bottom: 30px;
+        }
+    }
+
+    .skillContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 70%;
+        margin: auto;
+    }
+}

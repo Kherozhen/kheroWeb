@@ -1,37 +1,61 @@
 * {
   font-family: "Roboto", sans-serif;
+  color: white;
 }
 
 body {
   margin: 0;
+  background-color: #1c1f1e;
 }
 
 h1 {
   font-family: "Amatic SC";
   margin: 0;
+  font-size: 28px;
+}
+
+.skills .skill {
+  display: flex;
+  gap: 20px;
+}
+.skills .skill img {
+  width: 40px;
+  height: 40px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 nav {
-  background-color: #1c1f1e;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   padding: 20px;
+  border-bottom: 1px solid white;
 }
 nav .navIcon {
   color: white;
-  font-size: 20px;
+  font-size: 30px;
   cursor: pointer;
 }
 
-.banner {
-  text-align: center;
+.banner img {
+  width: 100%;
+}
+
+.about {
   background-color: #1c1f1e;
-  padding-top: 20px;
+  text-align: center;
   padding-bottom: 40px;
 }
-.banner h1 {
-  color: white;
+.about .aboutContainer .aboutText {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  font-size: 18px;
+  padding-bottom: 30px;
 }
-.banner p {
-  color: white;
+.about .skillContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 70%;
+  margin: auto;
 }/*# sourceMappingURL=main.css.map */

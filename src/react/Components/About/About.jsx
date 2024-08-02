@@ -1,0 +1,55 @@
+
+
+import Skill from "./Skill";
+
+import logoHtml from "../../../images/Logos/logo_html.png";
+import logoCss from "../../../images/Logos/logo_css.png";
+import logoSass from "../../../images/Logos/logo_sass.png";
+import logoJS from "../../../images/Logos/logo_javascript.jpg";
+import logoReact from "../../../images/Logos/logo_react.png";
+import logoRedux from "../../../images/Logos/logo_redux.png";
+
+
+function About () {
+
+    return (
+        <div className="about">
+            <div className="aboutContainer">
+                <div className="aboutText">
+                    <p>Développeur Web</p>
+                    <p>-</p>
+                    <p>Front-End</p>
+                </div>
+                <div className="skillContainer">
+                    <Skill 
+                        img={logoHtml}
+                        logo="HTML"
+                    />
+                    <Skill 
+                        img={logoCss}
+                        logo="Css"
+                    />
+                    <Skill 
+                        img={logoSass}
+                        logo="Sass"
+                    />
+                    <Skill 
+                        img={logoJS}
+                        logo="JavaScript"
+                    />
+                    <Skill 
+                        img={logoReact}
+                        logo="React"
+                    />
+                    <Skill 
+                        img={logoRedux}
+                        logo="Redux"
+                    />
+                </div>
+            </div>
+
+        </div>
+    )
+}
+
+export default About;
