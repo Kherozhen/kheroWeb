@@ -8,6 +8,8 @@ import logoSass from "../../../images/Logos/logo_sass.png";
 import logoJS from "../../../images/Logos/logo_javascript.jpg";
 import logoReact from "../../../images/Logos/logo_react.png";
 import logoRedux from "../../../images/Logos/logo_redux.png";
+import logoNodeJs from "../../../images/Logos/logo_nodejs.jpg";
+import logoSwagger from "../../../images/Logos/logo_swagger.png";
 
 
 function About () {
@@ -45,6 +47,20 @@ function About () {
                         img={logoRedux}
                         logo="Redux"
                     />
+                </div>
+                <div className="aboutText">
+                    <p>Notions en Back-End</p>
+                </div>
+                <div className="skillContainer">
+                    <Skill 
+                        img={logoNodeJs}
+                        logo="Nodejs"
+                    />
+                    <Skill 
+                        img={logoSwagger}
+                        logo="Swagger"
+                    />
+                    
                 </div>
             </div>
 
