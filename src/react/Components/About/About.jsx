@@ -18,9 +18,9 @@ function About () {
         <div className="about">
             <div className="aboutContainer">
                 <div className="aboutText">
-                    <p>Développeur Web</p>
-                    <p>-</p>
-                    <p>Front-End</p>
+                    <h2>Développeur Web</h2>
+                    <h2>-</h2>
+                    <h2>Front-End</h2>
                 </div>
                 <div className="skillContainer">
                     <Skill 
@@ -60,10 +60,9 @@ function About () {
                         img={logoSwagger}
                         logo="Swagger"
                     />
-                    
                 </div>
             </div>
-
+            <p className="next">...</p>
         </div>
     )
 }

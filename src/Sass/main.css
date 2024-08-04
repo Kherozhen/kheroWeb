@@ -50,14 +50,12 @@ nav .navIcon {
 .about {
   background-color: #1c1f1e;
   text-align: center;
-  padding-bottom: 80px;
 }
 .about .aboutContainer .aboutText {
   display: flex;
   justify-content: center;
   gap: 10px;
   font-size: 18px;
-  padding-bottom: 20px;
   padding-top: 20px;
 }
 .about .skillContainer {
@@ -67,13 +65,30 @@ nav .navIcon {
   margin: auto;
 }
 
-.projects {
+.cards {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+.cards img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+.cards p {
+  padding-bottom: 30px;
+  text-align: justify;
+}
+
+.project {
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
   gap: 30px;
 }
-.projects article {
+.project article {
   width: 80%;
   background-color: white;
   border-radius: 10px;
@@ -81,23 +96,33 @@ nav .navIcon {
   flex-direction: column;
   gap: 10px;
 }
-.projects article button {
+.project article button {
   border: none;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   cursor: pointer;
   box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.3);
 }
-.projects article button .imgCover {
+.project article button .imgCover {
   width: 100%;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.projects article .imgLogo {
+.project article .imgLogo {
   width: 60%;
   align-self: center;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+.next {
+  padding: 10px;
+}
+
+#mission .introMission {
+  width: 60%;
+  margin: auto;
+  padding-bottom: 40px;
 }/*# sourceMappingURL=main.css.map */
