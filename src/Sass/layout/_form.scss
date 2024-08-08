@@ -1,0 +1,57 @@
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 80%;
+    margin: auto;
+
+
+    .formText {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        
+        label {
+            text-align: left;
+            padding-left: 10px;
+        }
+        input {
+            color: black;
+            padding: 10px;
+            border: none;
+        }
+    }
+    .formTextarea {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        label {
+            text-align: left;
+            padding-left: 10px;
+        }
+        textarea {
+            padding: 10px;
+            height: 100px;
+            overflow-y: auto;
+            border: none;
+        }
+    }
+    button {
+        background-color: $backgroundButton;
+        width: 60%;
+        height: 40px;
+        border: none;
+        border-radius: 13px;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 18px;
+        font-weight: 700;
+
+        &:hover {
+            filter: brightness(80%);
+        }
+    }
+}

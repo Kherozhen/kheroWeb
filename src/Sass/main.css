@@ -81,6 +81,10 @@ nav .navIcon {
   padding-bottom: 30px;
   text-align: justify;
 }
+.cards p span {
+  font-weight: 700;
+  padding-left: 0px;
+}
 
 .project {
   display: grid;
@@ -117,12 +121,75 @@ nav .navIcon {
   padding-bottom: 10px;
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 80%;
+  margin: auto;
+}
+form .formText {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+form .formText label {
+  text-align: left;
+  padding-left: 10px;
+}
+form .formText input {
+  color: black;
+  padding: 10px;
+  border: none;
+}
+form .formTextarea {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+form .formTextarea label {
+  text-align: left;
+  padding-left: 10px;
+}
+form .formTextarea textarea {
+  padding: 10px;
+  height: 100px;
+  overflow-y: auto;
+  border: none;
+}
+form button {
+  background-color: #20e3b2;
+  width: 60%;
+  height: 40px;
+  border: none;
+  border-radius: 13px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 700;
+}
+form button:hover {
+  filter: brightness(80%);
+}
+
 .next {
   padding: 10px;
 }
 
+#mission h2 {
+  padding: 0;
+}
 #mission .introMission {
   width: 60%;
   margin: auto;
   padding-bottom: 40px;
+}
+#mission .next {
+  padding-top: 0;
+  margin-top: 0;
+}
+
+#contact h2 {
+  padding: 0;
 }/*# sourceMappingURL=main.css.map */

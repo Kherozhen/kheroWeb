@@ -1,12 +1,12 @@
 
 
-function Card ({ img, alt, text }) {
+function Card ({ img, alt,mission, text }) {
 
     return (
 
         <div className="cards">
             <img src={img} alt={alt}/>
-            <p>{text}</p>
+            <p><span>&nbsp;&nbsp;&nbsp;&nbsp;{mission}</span>{text}</p>
         </div>
 
     )

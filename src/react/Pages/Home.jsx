@@ -10,6 +10,7 @@ import imgOpti from "../../images/optimisation.png";
 
 import Projects from "../Components/Projects/Projects";
 
+import Form from "../Components/Form/Form";
 
 function Home() {
   return (
@@ -29,31 +30,37 @@ function Home() {
         </div>
       </div>
       <div id="mission">
-        <h2>Mes missions de développeur</h2>
-        <p className="introMission">Le développeur est un créateur de site web mais pas que..</p>
+        <h2>Mes missions</h2>
+        <p className="introMission">en tant que développeur</p>
         <Card 
           img={imgCode}
           alt="Image d'un code"
-          text="Créer le site internet qui correspond à vos envie est une priorité.
+          mission="Créer le site internet "
+          text="qui correspond à vos envie est une priorité.
                 Grâce à vos maquettes, vos images ou simplement vos souhaits, je ferais en sorte de répondre à 100% à votre demande."
         />
         <Card 
           img={imgBug}
           alt="Image de cherche de bug informatique"
-          text="Les bugs sont monnaies courant dans le domaine du codage.
-                La mission d'un développeur est aussi de lutter et réparer ces problèmes en surveillant et mettant un jour votre site."
+          mission="Corriger les bugs. "
+          text="Repérer les problèmes d'un site en le surveillant et le mettre à jour régulièrement permet de lutter contre les bugs et garantir sa sécurité."
         />
         <Card 
           img={imgOpti}
           alt="Image de recherche d'optimisation"
-          text="Un site web n'est jamais réellement terminé, pour être le plus performant et le plus visible, il faut optimiser.
-                Faire le référencement du site pour être plus facile à trouver, l'améliorer pour faciliter son utilisation est aussi une mission de développeur."
+          mission="Optimiser un site internet "
+          text="est la clé pour être visible. Faire son référencement et rester à jour des dernières nouveautés permet une grande facilité du site Web pour les visiteurs."   
         />
         <p className="next">...</p>
       </div>
       </section>
 
       <section id="contact">
+        <div className="contactContainer">
+          <h2>Une idée, une envie ?</h2>
+          <p>Parlons-en !</p>
+          <Form />
+        </div>
 
       </section>
       

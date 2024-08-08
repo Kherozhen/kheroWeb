@@ -4,9 +4,23 @@
 
 #mission {
 
+    h2 {
+        padding: 0;
+    }
     .introMission {
         width: 60%;
         margin: auto;
         padding-bottom: 40px;
+    }
+    .next {
+        padding-top: 0;
+        margin-top: 0;
+    }
+}
+
+#contact {
+
+    h2 {
+        padding: 0;
     }
 }
