@@ -6,7 +6,7 @@ function Card ({ img, alt,mission, text }) {
 
         <div className="cards">
             <img src={img} alt={alt}/>
-            <p><span>&nbsp;&nbsp;&nbsp;&nbsp;{mission}</span>{text}</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;<span>{mission}</span>{text}</p>
         </div>
 
     )

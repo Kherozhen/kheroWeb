@@ -1,0 +1,31 @@
+
+footer {
+
+    border-top: 1px solid white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h3 {
+        padding-left: 20px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .footerIcons {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        padding-right: 20px;
+
+        button, a {
+           cursor: pointeur; 
+           border: none;
+           background-color: $background;
+           
+           .footerIcon {
+            font-size: 26px;
+            }
+        }
+    }
+}

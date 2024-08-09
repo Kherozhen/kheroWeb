@@ -3,10 +3,40 @@ nav {
     justify-content: space-between;
     padding: 20px;
     border-bottom: 1px solid white;
+    position: relative;
+    transition: height 0.3s ease;
+
+    &.expanded {
+        height: 170px; 
+    }
 
     .navIcon {
         color: white;
         font-size: 30px;
         cursor: pointer;
+    }
+
+    .navLinks {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        width: 80%;
+        padding-top: 10px;
+        box-sizing: border-box;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+
+    .navLinks a {
+        color: white;
+        text-decoration: none;
+        padding: 10px 0;
+        text-align: left;
+        transition: color 0.3s;
+        
+        &:hover {
+            color: #ccc;
+        }
     }
 }

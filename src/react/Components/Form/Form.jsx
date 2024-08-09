@@ -31,7 +31,7 @@ function Form() {
             >  
             </input>
         </div>
-        <div class="formTextarea">
+        <div className="formTextarea">
             <label htmlFor="message">Message* </label>
             <textarea 
                 id="message" 

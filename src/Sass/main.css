@@ -20,6 +20,11 @@ h2 {
   padding-bottom: 20px;
 }
 
+h3 {
+  font-family: "Amatic SC";
+  font-size: 24px;
+}
+
 .banner img {
   width: 100%;
 }
@@ -40,11 +45,37 @@ nav {
   justify-content: space-between;
   padding: 20px;
   border-bottom: 1px solid white;
+  position: relative;
+  transition: height 0.3s ease;
+}
+nav.expanded {
+  height: 170px;
 }
 nav .navIcon {
   color: white;
   font-size: 30px;
   cursor: pointer;
+}
+nav .navLinks {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  width: 80%;
+  padding-top: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+nav .navLinks a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 0;
+  text-align: left;
+  transition: color 0.3s;
+}
+nav .navLinks a:hover {
+  color: #ccc;
 }
 
 .about {
@@ -84,6 +115,7 @@ nav .navIcon {
 .cards p span {
   font-weight: 700;
   padding-left: 0px;
+  text-decoration: underline;
 }
 
 .project {
@@ -127,6 +159,7 @@ form {
   gap: 10px;
   width: 80%;
   margin: auto;
+  margin-bottom: 30px;
 }
 form .formText {
   display: flex;
@@ -171,6 +204,32 @@ form button {
 }
 form button:hover {
   filter: brightness(80%);
+}
+
+footer {
+  border-top: 1px solid white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer h3 {
+  padding-left: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+footer .footerIcons {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding-right: 20px;
+}
+footer .footerIcons button, footer .footerIcons a {
+  cursor: pointeur;
+  border: none;
+  background-color: #1c1f1e;
+}
+footer .footerIcons button .footerIcon, footer .footerIcons a .footerIcon {
+  font-size: 26px;
 }
 
 .next {
