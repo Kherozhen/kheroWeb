@@ -189,6 +189,7 @@ form .formTextarea textarea {
   height: 100px;
   overflow-y: auto;
   border: none;
+  color: black;
 }
 form button {
   background-color: #20e3b2;

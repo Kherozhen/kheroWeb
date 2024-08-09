@@ -1,10 +1,32 @@
-
+import { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 function Form() {
 
+    const formContact = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm(
+            'service_vo59sai', 
+            'template_l1pqt43', 
+            formContact.current, 
+            'kXcGgOsyhAxiMO_Rv'
+        )
+        .then((result) => {
+            console.log('Email envoyé avec succès !', result.text);
+        }, (error) => {
+            console.error('Erreur lors de l\'envoi de l\'email...', error.text);
+        });
+
+    e.target.reset();  // Réinitialiser le formulaire après l'envoi
+};
+
+
     return (
 
-    <form className="form">
+    <form className="form" ref={formContact} onSubmit={sendEmail}>
         <div className="formText">
             <label htmlFor="nom">Nom* </label>
             <input
@@ -40,7 +62,7 @@ function Form() {
             >
             </textarea>
         </div>
-        <button>Envoyer</button>
+        <button type="submit">Envoyer</button>
     </form>
     )
 }
