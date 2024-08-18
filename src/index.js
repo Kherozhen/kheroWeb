@@ -7,18 +7,24 @@ import Home from './react/Pages/Home';
 import Footer from './react/Components/Footer/Footer';
 import './Sass/main.css';
 
+// Redux
+
+import { Provider } from 'react-redux';
+import Store from './Redux/Store/Store';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Router>
-      <Header/>
-        <Routes>
-          <Route path="/" element={<Home />} />
-        </Routes>
-      <Footer />
-    </Router>
+    <Provider store={Store}>
+      <Router>
+        <Header/>
+          <Routes>
+            <Route path="/" element={<Home />} />
+          </Routes>
+        <Footer />
+      </Router>
+    </Provider>
   </React.StrictMode>
 );
 

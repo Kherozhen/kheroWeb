@@ -7,39 +7,73 @@ form {
     margin: auto;
     margin-bottom: 30px;
 
-
-    .formText {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        
-        label {
-            text-align: left;
-            padding-left: 10px;
-        }
-        input {
-            color: black;
-            padding: 10px;
-            border: none;
-        }
+    @media screen and (min-width: 1025px) {
+        width: 100%;
+        padding-bottom: 20px;
     }
-    .formTextarea {
+
+    .inputsForm {
         display: flex;
         flex-direction: column;
         gap: 10px;
 
-        label {
-            text-align: left;
-            padding-left: 10px;
+        @media screen and (min-width: 1025px) {
+            flex-direction: row;
+            justify-content: center;
+            gap: 50px;
+            padding-bottom: 20px;
         }
-        textarea {
-            padding: 10px;
-            height: 100px;
-            overflow-y: auto;
-            border: none;
-            color: black;
+    
+        .formText {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            @media screen and (min-width: 1025px) {
+                width: 25%;
+                gap: 15px;
+            }
+            
+            label {
+                text-align: left;
+                padding-left: 10px;
+                
+            }
+            input {
+                color: black;
+                padding: 10px;
+                border: none;
+                
+            }
+        }
+        .formTextarea {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            
+            @media screen and (min-width: 1025px) {
+                width: 25%;
+                gap: 15px;
+            }
+
+            label {
+                text-align: left;
+                padding-left: 10px;
+            }
+            textarea {
+                padding: 10px;
+                height: 100px;
+                overflow-y: auto;
+                border: none;
+                color: black;
+
+                @media screen and (min-width: 1025px) {
+                    height: 100%;
+                }
+            }
         }
     }
+
     button {
         background-color: $backgroundButton;
         width: 60%;
@@ -51,6 +85,11 @@ form {
         margin-bottom: 20px;
         font-size: 18px;
         font-weight: 700;
+
+        @media screen and (min-width: 1025px) {
+            width: 15%;
+            height: 50px;
+        }
 
         &:hover {
             filter: brightness(80%);

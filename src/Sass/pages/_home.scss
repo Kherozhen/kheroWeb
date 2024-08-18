@@ -1,26 +1,55 @@
 .next {
     padding: 10px;
+    @media screen and (min-width: 1025px) {
+        padding-top: 50px;
+    }
 }
-
-#mission {
-
-    h2 {
-        padding: 0;
+.sectionMissionsProjects {
+    @media screen and (min-width: 1025px) {
+        display: flex;
+        flex-direction: column-reverse;
     }
-    .introMission {
-        width: 60%;
-        margin: auto;
-        padding-bottom: 40px;
-    }
-    .next {
-        padding-top: 0;
-        margin-top: 0;
+
+    #missions {
+
+        h2 {
+            padding-bottom: 0;
+        }
+        .introMission {
+            width: 60%;
+            margin: auto;
+            padding-bottom: 40px;
+        }
+        .containerCards {
+            width: 80%;
+            margin: auto;
+            @media screen and (min-width: 1025px) {
+                width: 100%;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                gap: 30px;
+            }
+        }
+        .next {
+            padding-top: 0;
+            margin-top: 0;
+    
+            @media screen and (min-width: 1025px) {
+                padding-bottom: 30px;
+            }
+        }
     }
 }
 
 #contact {
 
     h2 {
-        padding: 0;
+        padding-bottom: 0;
+    }
+
+    p {
+        @media screen and (min-width: 1025px) {
+            padding-bottom: 20px;
+        }
     }
 }

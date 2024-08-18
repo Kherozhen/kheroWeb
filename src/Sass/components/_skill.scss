@@ -1,6 +1,8 @@
 
 .skills {
-    
+    @media screen and (min-width: 1025px) {
+        margin-left: 200px;
+        }
 
     .skill {
         display: flex;
