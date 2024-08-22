@@ -1,0 +1,176 @@
+swagger: '2.0'
+info:
+  title: KheroWeb
+  description: API for Developer Website
+  version: 1.0.0
+
+host: localhost:3001
+basePath: /api/v1
+schemes:
+  - http
+
+paths:
+  /users/login:
+    post:
+      tags:
+        - User Module
+      summary: Log In the user.
+      parameters:
+        - in: body
+          name: body
+          required: true
+          schema:
+            type: object
+            properties:
+              email:
+                type: string
+              password:
+                type: string
+      responses:
+        '200':
+          description: Connected
+          schema:
+            type: object
+            properties:
+              userId:
+                type: integer
+                format: int64
+                example: 1
+              token:
+                type: string
+                example: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+        '404':
+          description: User not found
+        '401':
+          description: Not Authorized
+
+  /projects:
+    get:
+      tags:
+        - Project Module
+      summary: Returns all projects
+      security:
+        - BearerAuth: []
+      responses:
+        '200':
+          description: Returns an array of all projects
+          schema:
+            type: array
+            items:
+              type: object
+              properties:
+                id:
+                  type: integer
+                  format: int64
+                  example: 1
+                title:
+                  type: string
+                  example: "Ohmyfood"
+                logo:
+                  type: string
+                  example: "http://localhost:3001/images/logo_ohmyfood.png"
+                imageCoverUrl:
+                  type: string
+                  example: "http://localhost:3001/images/Ohmyfood_Home.avif"
+                picturesUrl:
+                  type: string
+                  example: "http://localhost:3001/images/Ohmyfood_Menu.avif"
+                description:
+                  type: string
+                link:
+                  type: string
+                  example: "https://kherozhen.github.io/Ohmyfood/"
+                linkGithub:
+                  type: string
+                  example: "https://github.com/Kherozhen/Ohmyfood"
+        '500':
+          description: Unexpected Error
+
+    post:
+      tags:
+        - Project Module
+      summary: Send a new project
+      security:
+        - BearerAuth: []
+      parameters:
+        - in: formData
+          name: title
+          type: string
+          required: true
+        - in: formData
+          name: imageCover
+          type: file
+          required: true
+        - in: formData
+          name: pictures
+          type: file
+          required: true
+        - in: formData
+          name: description
+          type: string
+          format: int64
+          required: true
+        - in: formData
+          name: link
+          type: string
+          required: true
+        - in: formData
+          name: linkGithub
+          type: string
+          required: true
+      responses:
+        '201':
+          description: Created
+          schema:
+            type: object
+            properties:
+              id:
+                type: integer
+                format: int64
+              title:
+                type: string
+              imageCoverUrl:
+                type: string
+              picturesUrl:
+                type: string
+              description:
+                type: string
+              link:
+                type: string
+              linkGithub:
+                type: string
+        '500':
+          description: Unexpected Error
+        '401':
+          description: Unauthorized
+        '400':
+          description: Bad Request
+
+  /projects/{id}:
+    delete:
+      tags:
+        - Project Module
+      summary: Delete a project depending on id
+      security:
+        - BearerAuth: []
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: id of project to be deleted
+          type: integer
+          format: int64
+          example: 1
+      responses:
+        '200':
+          description: Item Deleted
+        '401':
+          description: Unauthorized
+        '500':
+          description: Unexpected Behaviour
+
+securityDefinitions:
+  BearerAuth:
+    type: apiKey
+    name: Authorization
+    in: header

@@ -12,6 +12,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "css-loader": "^7.1.2",
+    "js-yaml": "^4.1.0",
     "postcss-loader": "^8.1.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
@@ -22,10 +23,14 @@
     "resolve-url-loader": "^5.0.0",
     "sass": "^1.77.8",
     "sass-loader": "^16.0.0",
-    "web-vitals": "^2.1.4"
+    "swagger-ui-express": "^5.0.1",
+    "web-vitals": "^2.1.4",
+    "concurrently": "^7.6.0"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "backend": "node back_end/app.js",
+    "frontend": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
