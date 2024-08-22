@@ -2,6 +2,11 @@
 .banner {
     img {
         width: 100%;
+
+        @media screen and (min-width: 499px) {
+            height: 400px;
+            object-fit: cover;
+        }
         
         @media screen and (min-width: 1025px) {
             height: 500px;

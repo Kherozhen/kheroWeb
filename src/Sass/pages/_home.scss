@@ -5,6 +5,7 @@
     }
 }
 .sectionMissionsProjects {
+
     @media screen and (min-width: 1025px) {
         display: flex;
         flex-direction: column-reverse;
@@ -23,11 +24,15 @@
         .containerCards {
             width: 80%;
             margin: auto;
-            @media screen and (min-width: 1025px) {
-                width: 100%;
+
+            @media screen and (min-width: 499px) {
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr;
                 gap: 30px;
+            }
+
+            @media screen and (min-width: 1025px) {
+                width: 100%;
             }
         }
         .next {

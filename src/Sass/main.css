@@ -41,6 +41,13 @@ h3 {
 .banner img {
   width: 100%;
 }
+@media screen and (min-width: 499px) {
+  .banner img {
+    height: 400px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
 @media screen and (min-width: 1025px) {
   .banner img {
     height: 500px;
@@ -76,6 +83,11 @@ nav {
 nav.expanded {
   height: 170px;
 }
+@media screen and (min-width: 499px) {
+  nav.expanded {
+    height: 35px;
+  }
+}
 nav .navIcon {
   color: white;
   font-size: 30px;
@@ -86,11 +98,18 @@ nav .navLinks {
   flex-direction: column;
   position: absolute;
   top: 60px;
-  width: 80%;
   padding-top: 10px;
   box-sizing: border-box;
   text-align: center;
   transition: all 0.3s ease;
+}
+@media screen and (min-width: 499px) {
+  nav .navLinks {
+    flex-direction: row;
+    gap: 30px;
+    top: 8px;
+    right: 100px;
+  }
 }
 nav .navLinks a {
   color: white;
@@ -140,6 +159,11 @@ nav .navLinks a:hover {
      object-fit: cover;
   border-radius: 10px;
 }
+@media screen and (min-width: 499px) {
+  .cards img {
+    height: 150px;
+  }
+}
 @media screen and (min-width: 1025px) {
   .cards img {
     height: 300px;
@@ -166,8 +190,16 @@ nav .navLinks a:hover {
   justify-items: center;
   gap: 30px;
 }
+@media screen and (min-width: 499px) {
+  .project {
+    width: 80%;
+    margin: auto;
+    grid-template-columns: 1fr 1fr;
+  }
+}
 @media screen and (min-width: 1025px) {
   .project {
+    width: 100%;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
   }
@@ -184,6 +216,12 @@ nav .navLinks a:hover {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+@media screen and (min-width: 499px) {
+  .project article {
+    width: 100%;
+    height: 400px;
+  }
 }
 @media screen and (min-width: 1025px) {
   .project article {
@@ -210,6 +248,11 @@ nav .navLinks a:hover {
   -o-object-fit: cover;
      object-fit: cover;
 }
+@media screen and (min-width: 499px) {
+  .project article button .imgCover {
+    height: 300px;
+  }
+}
 @media screen and (min-width: 1025px) {
   .project article button .imgCover {
     height: 100%;
@@ -220,6 +263,11 @@ nav .navLinks a:hover {
   align-self: center;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+@media screen and (min-width: 499px) {
+  .project article .imgLogo {
+    width: 40%;
+  }
 }
 @media screen and (min-width: 1025px) {
   .project article .imgLogo {
@@ -313,6 +361,12 @@ form button {
   font-size: 18px;
   font-weight: 700;
 }
+@media screen and (min-width: 499px) {
+  form button {
+    width: 30%;
+    height: 50px;
+  }
+}
 @media screen and (min-width: 1025px) {
   form button {
     width: 15%;
@@ -376,12 +430,16 @@ footer .footerIcons button .footerIcon, footer .footerIcons a .footerIcon {
   width: 80%;
   margin: auto;
 }
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 499px) {
   .sectionMissionsProjects #missions .containerCards {
-    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .sectionMissionsProjects #missions .containerCards {
+    width: 100%;
   }
 }
 .sectionMissionsProjects #missions .next {
