@@ -3,7 +3,7 @@
         "id": "1",
         "title": "Ohmyfood",
         "logo": "images/Websites/Ohmyfood/logo_ohmyfood.png",
-        "cover": "images/Websites/Ohmyfood/Ohmyfood_Home.png",
+        "cover": "images/Websites/Ohmyfood/Ohmyfood_Home.avif",
         "pictures": [
             "images/Websites/Ohmyfood/Ohmyfood_Menu.png"
         ],
@@ -15,11 +15,11 @@
         "id": "2",
         "title": "Sophie Bluel",
         "logo": "images/Websites/Sophie_Bluel/logo_Sophie.png",
-        "cover": "images/Websites/Sophie_Bluel/Sophie_Home.png",
+        "cover": "images/Websites/Sophie_Bluel/Sophie_Home.avif",
         "pictures": [
-            "images/Websites/Sophie_Bluel/Sophie_Login.png",
-            "images/Websites/Sophie_Bluel/Sophie_Editor.png",
-            "images/Websites/Sophie_Bluel/Sophie_AddPhoto.png"
+            "images/Websites/Sophie_Bluel/Sophie_Login.avif",
+            "images/Websites/Sophie_Bluel/Sophie_Editor.avif",
+            "images/Websites/Sophie_Bluel/Sophie_AddPhoto.avif"
         ],
         "description": "Site d'architecture d'intérieur",
         "link": "", 
@@ -29,10 +29,10 @@
         "id": "3",
         "title": "Kasa",
         "logo": "images/Websites/Kasa/Logo_Kasa.png",
-        "cover": "images/Websites/Kasa/Kasa_Home.png",
+        "cover": "images/Websites/Kasa/Kasa_Home.avif",
         "pictures": [
-            "images/Websites/Kasa/Kasa_Logement.png",
-            "images/Websites/Kasa/Kasa_About.png"
+            "images/Websites/Kasa/Kasa_Logement.avif",
+            "images/Websites/Kasa/Kasa_About.avif"
         ],
         "description": "Site d'herbergement",
         "link": "", 

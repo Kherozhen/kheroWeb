@@ -5,7 +5,7 @@ import Skill from "./Skill";
 import logoHtml from "../../../images/Logos/logo_html.png";
 import logoCss from "../../../images/Logos/logo_css.png";
 import logoSass from "../../../images/Logos/logo_sass.png";
-import logoJS from "../../../images/Logos/logo_javascript.jpg";
+import logoJS from "../../../images/Logos/logo_javascript.png";
 import logoReact from "../../../images/Logos/logo_react.png";
 import logoRedux from "../../../images/Logos/logo_redux.png";
 import logoNodeJs from "../../../images/Logos/logo_nodejs.jpg";

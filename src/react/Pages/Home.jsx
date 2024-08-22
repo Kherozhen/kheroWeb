@@ -1,12 +1,12 @@
 
 import About from "../Components/About/About";
 import Banner from "../Components/Banner/Banner";
-import ImgBanner from '../../images/banner.jpg';
+import ImgBanner from '../../images/banner.avif';
 
 import Card from "../Components/Cards/Card";
-import imgCode from "../../images/code.jpg";
-import imgBug from "../../images/bug.jpeg";
-import imgOpti from "../../images/optimisation.png";
+import imgCode from "../../images/code.avif";
+import imgBug from "../../images/bug.avif";
+import imgOpti from "../../images/optimisation.avif";
 
 import Projects from "../Components/Projects/Projects";
 

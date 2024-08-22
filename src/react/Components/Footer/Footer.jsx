@@ -14,12 +14,12 @@ function Footer() {
                 icon={ faGithub }
             />
             </a>
-            <button>
+            <a href="">
                 <FontAwesomeIcon
                 className="footerIcon"
                 icon={ faLinkedin }
             />
-            </button> 
+            </a> 
         </div>
     </footer>
     )
