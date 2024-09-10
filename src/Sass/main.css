@@ -1,9 +1,11 @@
 * {
   font-family: "Roboto", sans-serif;
   color: white;
+  scroll-padding-top: 100px;
 }
 
 body {
+  height: 100%;
   margin: 0;
   background-color: #1c1f1e;
   text-align: center;
@@ -40,6 +42,7 @@ h3 {
 
 .banner img {
   width: 100%;
+  margin-top: 76px;
 }
 @media screen and (min-width: 499px) {
   .banner img {
@@ -72,7 +75,116 @@ h3 {
      object-fit: cover;
 }
 
-nav {
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1025px) {
+  form {
+    width: 100%;
+    padding-bottom: 20px;
+  }
+}
+form .inputsForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+@media screen and (min-width: 1025px) {
+  form .inputsForm {
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    padding-bottom: 20px;
+  }
+}
+form .inputsForm .formText {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+@media screen and (min-width: 1025px) {
+  form .inputsForm .formText {
+    width: 25%;
+    gap: 15px;
+  }
+}
+form .inputsForm .formText label {
+  text-align: left;
+  padding-left: 10px;
+}
+form .inputsForm .formText input {
+  color: black;
+  padding: 10px;
+  border: none;
+}
+form .inputsForm .formTextarea {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+@media screen and (min-width: 1025px) {
+  form .inputsForm .formTextarea {
+    width: 25%;
+    gap: 15px;
+  }
+}
+form .inputsForm .formTextarea label {
+  text-align: left;
+  padding-left: 10px;
+}
+form .inputsForm .formTextarea textarea {
+  padding: 10px;
+  height: 100px;
+  overflow-y: auto;
+  border: none;
+  color: black;
+}
+@media screen and (min-width: 1025px) {
+  form .inputsForm .formTextarea textarea {
+    height: 100%;
+  }
+}
+form button {
+  background-color: #20e3b2;
+  width: 60%;
+  height: 40px;
+  border: none;
+  border-radius: 13px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 700;
+}
+@media screen and (min-width: 499px) {
+  form button {
+    width: 30%;
+    height: 50px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  form button {
+    width: 15%;
+    height: 50px;
+  }
+}
+form button:hover {
+  filter: brightness(80%);
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #1c1f1e;
+}
+header nav {
   display: flex;
   justify-content: space-between;
   padding: 20px;
@@ -80,20 +192,23 @@ nav {
   position: relative;
   transition: height 0.3s ease;
 }
-nav.expanded {
+header nav.expanded {
   height: 170px;
 }
 @media screen and (min-width: 499px) {
-  nav.expanded {
+  header nav.expanded {
     height: 35px;
   }
 }
-nav .navIcon {
+header nav .Link {
+  text-decoration: none;
+}
+header nav .navIcon {
   color: white;
   font-size: 30px;
   cursor: pointer;
 }
-nav .navLinks {
+header nav .navLinks {
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -104,22 +219,25 @@ nav .navLinks {
   transition: all 0.3s ease;
 }
 @media screen and (min-width: 499px) {
-  nav .navLinks {
+  header nav .navLinks {
     flex-direction: row;
     gap: 30px;
     top: 8px;
     right: 100px;
   }
 }
-nav .navLinks a {
+header nav .navLinks a {
   color: white;
   text-decoration: none;
   padding: 10px 0;
   text-align: left;
   transition: color 0.3s;
 }
-nav .navLinks a:hover {
+header nav .navLinks a:hover {
   color: #ccc;
+}
+header nav .iconLog {
+  filter: brightness(0.5);
 }
 
 .about {
@@ -275,108 +393,6 @@ nav .navLinks a:hover {
   }
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  width: 80%;
-  margin: auto;
-  margin-bottom: 30px;
-}
-@media screen and (min-width: 1025px) {
-  form {
-    width: 100%;
-    padding-bottom: 20px;
-  }
-}
-form .inputsForm {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-@media screen and (min-width: 1025px) {
-  form .inputsForm {
-    flex-direction: row;
-    justify-content: center;
-    gap: 50px;
-    padding-bottom: 20px;
-  }
-}
-form .inputsForm .formText {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-@media screen and (min-width: 1025px) {
-  form .inputsForm .formText {
-    width: 25%;
-    gap: 15px;
-  }
-}
-form .inputsForm .formText label {
-  text-align: left;
-  padding-left: 10px;
-}
-form .inputsForm .formText input {
-  color: black;
-  padding: 10px;
-  border: none;
-}
-form .inputsForm .formTextarea {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-@media screen and (min-width: 1025px) {
-  form .inputsForm .formTextarea {
-    width: 25%;
-    gap: 15px;
-  }
-}
-form .inputsForm .formTextarea label {
-  text-align: left;
-  padding-left: 10px;
-}
-form .inputsForm .formTextarea textarea {
-  padding: 10px;
-  height: 100px;
-  overflow-y: auto;
-  border: none;
-  color: black;
-}
-@media screen and (min-width: 1025px) {
-  form .inputsForm .formTextarea textarea {
-    height: 100%;
-  }
-}
-form button {
-  background-color: #20e3b2;
-  width: 60%;
-  height: 40px;
-  border: none;
-  border-radius: 13px;
-  margin: auto;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  font-size: 18px;
-  font-weight: 700;
-}
-@media screen and (min-width: 499px) {
-  form button {
-    width: 30%;
-    height: 50px;
-  }
-}
-@media screen and (min-width: 1025px) {
-  form button {
-    width: 15%;
-    height: 50px;
-  }
-}
-form button:hover {
-  filter: brightness(80%);
-}
-
 footer {
   border-top: 1px solid white;
   display: flex;
@@ -459,4 +475,47 @@ footer .footerIcons button .footerIcon, footer .footerIcons a .footerIcon {
   #contact p {
     padding-bottom: 20px;
   }
+}
+
+main {
+  flex: 1;
+}
+main .errorPage {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+main .errorPage .textError {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-size: 50px;
+  padding-top: 100px;
+  padding-bottom: 30px;
+}
+main .errorPage .textError p {
+  margin: 0;
+}
+main .errorPage p {
+  margin: 0;
+}
+main .errorPage .comeBack {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding-bottom: 50px;
+}
+main .errorPage .comeBack a {
+  cursor: pointer;
+}
+main .errorPage .comeBack .iconSmile {
+  font-size: 20px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+main .login {
+  flex: 1;
 }/*# sourceMappingURL=main.css.map */

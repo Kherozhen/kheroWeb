@@ -6,15 +6,18 @@
 @import "./components/banner";
 @import "./components/skill";
 @import "./components/modal";
-
+@import "./components/form";
 
 @import "./layout/header";
 @import "./layout/about";
 @import "./layout/card";
 @import "./layout/projects";
-@import "./layout/form";
+
 
 @import "./layout/footer";
 
 @import "./pages/home";
+@import "./pages/errorPage";
+@import "./pages/login";
+
 

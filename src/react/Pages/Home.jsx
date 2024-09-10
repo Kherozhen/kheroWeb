@@ -21,7 +21,6 @@ function Home() {
 
       <main>
         <section id="aboutMe">
-          
           <About />
         </section>
 

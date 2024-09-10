@@ -1,13 +1,16 @@
 * {
     font-family: 'Roboto', sans-serif;
     color: white;
+    scroll-padding-top: 100px; // sert pour que le header ne se supperpose pas avec les titres
 }
 
-body{
+body {
+    height: 100%;
     margin: 0;
     background-color: $background;
     text-align: center;
 }
+
 main {
     @media screen and (min-width: 1025px) {
         max-width: 1440px;

@@ -1,0 +1,42 @@
+main {
+    flex: 1;
+
+    .errorPage {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        .textError {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            font-size: 50px;
+
+            padding-top: 100px;
+            padding-bottom: 30px;
+            
+            p {
+                margin: 0;
+            }
+        }
+            
+        p {
+            margin: 0;
+        }
+
+        .comeBack {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            padding-bottom: 50px;
+
+            a {
+                cursor: pointer;
+
+            }
+            .iconSmile {
+                font-size: 20px;
+            }
+        }
+    }
+}
