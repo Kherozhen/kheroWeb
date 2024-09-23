@@ -1,0 +1,37 @@
+.carousel {
+    position: relative;
+
+    .carousel-status {
+        display: none;
+    }
+
+    .control-next {
+        &.control-arrow {
+            cursor: pointer;
+            position: absolute;
+            width: 30px;
+            right: 5px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 30px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            z-index: 1000;
+        }
+    }
+
+    .control-prev {
+        &.control-arrow {
+            cursor: pointer;
+            position: absolute;
+            width: 30px;
+            left: 5px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 30px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            z-index: 1000;
+        }
+    }
+}

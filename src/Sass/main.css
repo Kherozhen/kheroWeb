@@ -5,13 +5,13 @@
 }
 
 body {
-  height: 100%;
+  height: 100vh;
   margin: 0;
   background-color: #1c1f1e;
   text-align: center;
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1024px) {
   main {
     max-width: 1440px;
     margin: auto;
@@ -28,7 +28,7 @@ h2 {
   font-size: 22px;
   padding-bottom: 20px;
 }
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1024px) {
   h2 {
     padding-bottom: 40px;
     padding-top: 20px;
@@ -44,14 +44,14 @@ h3 {
   width: 100%;
   margin-top: 76px;
 }
-@media screen and (min-width: 499px) {
+@media screen and (min-width: 768px) {
   .banner img {
     height: 400px;
     -o-object-fit: cover;
        object-fit: cover;
   }
 }
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1024px) {
   .banner img {
     height: 500px;
     -o-object-fit: cover;
@@ -59,7 +59,38 @@ h3 {
   }
 }
 
-@media screen and (min-width: 1025px) {
+.carousel {
+  position: relative;
+}
+.carousel .carousel-status {
+  display: none;
+}
+.carousel .control-next.control-arrow {
+  cursor: pointer;
+  position: absolute;
+  width: 30px;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  z-index: 1000;
+}
+.carousel .control-prev.control-arrow {
+  cursor: pointer;
+  position: absolute;
+  width: 30px;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  z-index: 1000;
+}
+
+@media screen and (min-width: 1024px) {
   .skills {
     margin-left: 200px;
   }
@@ -73,6 +104,58 @@ h3 {
   height: 40px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.customOverlay {
+  background-color: rgba(0, 0, 0, 0.75);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.customModal {
+  background-color: #1c1f1e;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
+  height: 80%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: auto;
+}
+.customModal button {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.customModal img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.customModal .linkUrl {
+  cursor: pointer;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+.customModal .linkGithub {
+  cursor: pointer;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
 }
 
 form {
@@ -161,13 +244,13 @@ form button {
   font-size: 18px;
   font-weight: 700;
 }
-@media screen and (min-width: 499px) {
+@media screen and (min-width: 768px) {
   form button {
     width: 30%;
     height: 50px;
   }
 }
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1024px) {
   form button {
     width: 15%;
     height: 50px;
@@ -195,10 +278,13 @@ header nav {
 header nav.expanded {
   height: 170px;
 }
-@media screen and (min-width: 499px) {
+@media screen and (min-width: 768px) {
   header nav.expanded {
     height: 35px;
   }
+}
+header nav.hidden {
+  display: none;
 }
 header nav .Link {
   text-decoration: none;
@@ -218,7 +304,7 @@ header nav .navLinks {
   text-align: center;
   transition: all 0.3s ease;
 }
-@media screen and (min-width: 499px) {
+@media screen and (min-width: 768px) {
   header nav .navLinks {
     flex-direction: row;
     gap: 30px;
@@ -260,7 +346,7 @@ header nav .iconLog {
   width: 70%;
   margin: auto;
 }
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1024px) {
   .about .skillContainer {
     grid-template-columns: 1fr 1fr 1fr;
     width: 100%;
@@ -277,12 +363,12 @@ header nav .iconLog {
      object-fit: cover;
   border-radius: 10px;
 }
-@media screen and (min-width: 499px) {
+@media screen and (min-width: 768px) {
   .cards img {
     height: 150px;
   }
 }
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1024px) {
   .cards img {
     height: 300px;
   }
@@ -291,7 +377,7 @@ header nav .iconLog {
   padding-bottom: 30px;
   text-align: justify;
 }
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1024px) {
   .cards p {
     font-size: 18px;
   }
@@ -328,6 +414,7 @@ header nav .iconLog {
   }
 }
 .project article {
+  cursor: pointer;
   width: 80%;
   background-color: white;
   border-radius: 10px;
@@ -335,44 +422,33 @@ header nav .iconLog {
   flex-direction: column;
   gap: 10px;
 }
-@media screen and (min-width: 499px) {
+@media screen and (min-width: 768px) {
   .project article {
     width: 100%;
     height: 400px;
   }
 }
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1024px) {
   .project article {
     width: 100%;
     height: 400px;
   }
 }
-.project article button {
-  border: none;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  cursor: pointer;
-  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.3);
-}
-@media screen and (min-width: 1025px) {
-  .project article button {
-    height: 75%;
-  }
-}
-.project article button .imgCover {
+.project article .imgCover {
   width: 100%;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   -o-object-fit: cover;
      object-fit: cover;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.3);
 }
-@media screen and (min-width: 499px) {
-  .project article button .imgCover {
+@media screen and (min-width: 768px) {
+  .project article .imgCover {
     height: 300px;
   }
 }
-@media screen and (min-width: 1025px) {
-  .project article button .imgCover {
+@media screen and (min-width: 1024px) {
+  .project article .imgCover {
     height: 100%;
   }
 }
@@ -382,12 +458,12 @@ header nav .iconLog {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-@media screen and (min-width: 499px) {
+@media screen and (min-width: 768px) {
   .project article .imgLogo {
     width: 40%;
   }
 }
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1024px) {
   .project article .imgLogo {
     width: 30%;
   }
@@ -419,20 +495,14 @@ footer .footerIcons button .footerIcon, footer .footerIcons a .footerIcon {
   font-size: 26px;
 }
 
-.next {
-  padding: 10px;
-}
-@media screen and (min-width: 1025px) {
-  .next {
-    padding-top: 50px;
-  }
-}
-
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1024px) {
   .sectionMissionsProjects {
     display: flex;
     flex-direction: column-reverse;
   }
+}
+.sectionMissionsProjects #missions {
+  padding-top: 30px;
 }
 .sectionMissionsProjects #missions h2 {
   padding-bottom: 0;
@@ -446,14 +516,14 @@ footer .footerIcons button .footerIcon, footer .footerIcons a .footerIcon {
   width: 80%;
   margin: auto;
 }
-@media screen and (min-width: 499px) {
+@media screen and (min-width: 768px) {
   .sectionMissionsProjects #missions .containerCards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
   }
 }
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1024px) {
   .sectionMissionsProjects #missions .containerCards {
     width: 100%;
   }
@@ -462,7 +532,7 @@ footer .footerIcons button .footerIcon, footer .footerIcons a .footerIcon {
   padding-top: 0;
   margin-top: 0;
 }
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1024px) {
   .sectionMissionsProjects #missions .next {
     padding-bottom: 30px;
   }
@@ -471,21 +541,20 @@ footer .footerIcons button .footerIcon, footer .footerIcons a .footerIcon {
 #contact h2 {
   padding-bottom: 0;
 }
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1024px) {
   #contact p {
     padding-bottom: 20px;
   }
 }
 
-main {
-  flex: 1;
-}
-main .errorPage {
+.errorPage {
+  height: 90vh;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 30px;
 }
-main .errorPage .textError {
+.errorPage .textError {
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -493,29 +562,21 @@ main .errorPage .textError {
   padding-top: 100px;
   padding-bottom: 30px;
 }
-main .errorPage .textError p {
+.errorPage .textError p {
   margin: 0;
 }
-main .errorPage p {
+.errorPage p {
   margin: 0;
 }
-main .errorPage .comeBack {
+.errorPage .comeBack {
   display: flex;
   justify-content: center;
   gap: 10px;
   padding-bottom: 50px;
 }
-main .errorPage .comeBack a {
+.errorPage .comeBack a {
   cursor: pointer;
 }
-main .errorPage .comeBack .iconSmile {
+.errorPage .comeBack .iconSmile {
   font-size: 20px;
-}
-
-main {
-  display: flex;
-  flex-direction: column;
-}
-main .login {
-  flex: 1;
 }/*# sourceMappingURL=main.css.map */

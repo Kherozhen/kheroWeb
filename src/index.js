@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import Header from './react/Components/Header/Header';
 import Home from './react/Pages/Home';
-import Login from './react/Pages/Login';
 import Error from './react/Pages/Error';
 import Footer from './react/Components/Footer/Footer';
 import './Sass/main.css';
@@ -23,7 +22,6 @@ root.render(
         <Header/>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/login" element={<Login />} />
             <Route path="*" element={<Error />} />
           </Routes>
         <Footer />

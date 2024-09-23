@@ -1,6 +1,6 @@
 
 
-function Card ({ img, alt,mission, text }) {
+function Card ({ img, alt, mission, text }) {
 
     return (
 

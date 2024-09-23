@@ -17,9 +17,13 @@ header {
         &.expanded {
             height: 170px; 
 
-            @media screen and (min-width: 499px) {
+            @media screen and (min-width: 768px) {
                 height: 35px;
             }
+        }
+
+        &.hidden {
+            display: none;
         }
         
         .Link {
@@ -42,7 +46,7 @@ header {
             text-align: center;
             transition: all 0.3s ease;
 
-            @media screen and (min-width: 499px) {
+            @media screen and (min-width: 768px) {
                 flex-direction: row;
                 gap: 30px;
                 top: 8px;

@@ -1,0 +1,54 @@
+.customOverlay {
+    background-color: rgba(0, 0, 0, 0.75);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.customModal {
+    background-color: $background;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    height: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: auto;
+
+    button {
+        background-color: transparent;
+        border: none;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        border-radius: 8px;
+        object-fit: cover;
+    }
+        
+    .linkUrl {
+        cursor: pointer;
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+    }
+
+    .linkGithub {
+        cursor: pointer;
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+    }
+}

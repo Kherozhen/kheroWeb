@@ -13,6 +13,7 @@ import Projects from "../Components/Projects/Projects";
 import Form from "../Components/Form/Form";
 
 function Home() {
+
   return (
     <>
       <Banner 
@@ -29,7 +30,6 @@ function Home() {
             <div className="projectsContainer">
               <h2>Projets réalisés</h2>
               <Projects />
-              <p className="next">...</p>
             </div>
           </div>
           <div id="missions">
@@ -56,7 +56,6 @@ function Home() {
                 text=" est la clé pour être visible. Faire son référencement et rester à jour des dernières nouveautés permet une grande facilité du site Web pour les visiteurs."   
               />
             </div>
-            <p className="next">...</p>
           </div>
         </section>
 

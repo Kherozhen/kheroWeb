@@ -62,7 +62,6 @@ function About () {
                     />
                 </div>
             </div>
-            <p className="next">...</p>
         </div>
     )
 }

@@ -8,11 +8,11 @@
         object-fit: cover;
         border-radius: 10px;
 
-        @media screen and (min-width: 499px) {
+        @media screen and (min-width: 768px) {
             height: 150px;
         }
 
-        @media screen and (min-width: 1025px) {
+        @media screen and (min-width: 1024px) {
             height: 300px;
         }
     }
@@ -21,7 +21,7 @@
         padding-bottom: 30px;
         text-align: justify;
         
-        @media screen and (min-width: 1025px) {
+        @media screen and (min-width: 1024px) {
             font-size: 18px;
         }
         span {

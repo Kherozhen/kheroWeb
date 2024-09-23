@@ -5,22 +5,20 @@ import { Link } from 'react-router-dom';
 
 function Error () {
     return (
-        <main className='containerPageError'>
-            <div className='errorPage'>
-                <div className='textError'>
-                    <p className='error'>Nope !</p>
-                    <p className='smileyError'>&gt;_&lt;'</p>
-                </div>
-                <p className='pageNotFound'>Oh sorry ! This page is not found...</p>
-                <div className='comeBack'>
-                    <p>Please, <Link to="/" >come back</Link> </p>
-                    <FontAwesomeIcon
-                        className="iconSmile"
-                        icon= {faFaceLaughBeam}
-                    />
-                </div>
+        <div className='errorPage'>
+            <div className='textError'>
+                <p className='error'>Nope !</p>
+                <p className='smileyError'>&gt;_&lt;'</p>
             </div>
-        </main>
+            <p className='pageNotFound'>Oh sorry ! This page is not found...</p>
+            <div className='comeBack'>
+                <p>Please, <Link to="/" >come back</Link> </p>
+                <FontAwesomeIcon
+                    className="iconSmile"
+                    icon= {faFaceLaughBeam}
+                />
+            </div>
+        </div>
     )
 }
 

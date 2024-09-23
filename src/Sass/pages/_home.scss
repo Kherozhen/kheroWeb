@@ -1,17 +1,14 @@
-.next {
-    padding: 10px;
-    @media screen and (min-width: 1025px) {
-        padding-top: 50px;
-    }
-}
+
 .sectionMissionsProjects {
 
-    @media screen and (min-width: 1025px) {
+    @media screen and (min-width: 1024px) {
         display: flex;
         flex-direction: column-reverse;
     }
 
     #missions {
+
+        padding-top: 30px;
 
         h2 {
             padding-bottom: 0;
@@ -25,13 +22,13 @@
             width: 80%;
             margin: auto;
 
-            @media screen and (min-width: 499px) {
+            @media screen and (min-width: 768px) {
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr;
                 gap: 30px;
             }
 
-            @media screen and (min-width: 1025px) {
+            @media screen and (min-width: 1024px) {
                 width: 100%;
             }
         }
@@ -39,7 +36,7 @@
             padding-top: 0;
             margin-top: 0;
     
-            @media screen and (min-width: 1025px) {
+            @media screen and (min-width: 1024px) {
                 padding-bottom: 30px;
             }
         }
@@ -53,7 +50,7 @@
     }
 
     p {
-        @media screen and (min-width: 1025px) {
+        @media screen and (min-width: 1024px) {
             padding-bottom: 20px;
         }
     }

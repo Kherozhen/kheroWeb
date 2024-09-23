@@ -1,7 +1,6 @@
 import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 
-import Modal from '../Modal/Modal';
 
 function Form() {
 
@@ -71,13 +70,7 @@ function Form() {
                 <button type="submit">Envoyer</button>
             </form>
 
-                {isModalOpen && (
-                <Modal 
-                    title="Succès!"
-                    content="Votre email a été envoyé avec succès."
-                    //onClick={() => setIsModalOpen(false)}
-                />
-            )}
+                
         </>
     );
 }
