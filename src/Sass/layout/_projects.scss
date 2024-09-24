@@ -5,20 +5,20 @@
     justify-items: center;
     gap: 30px;
 
-    @media screen and (min-width: 499px) {
+    @media screen and (min-width: 768px) {
         width: 80%;
         margin: auto;
         grid-template-columns: 1fr 1fr;
     }
 
-    @media screen and (min-width: 1025px) {
+    @media screen and (min-width: 1024px) {
         width: 100%;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 30px;
     }
 
     h2 {
-        @media screen and (min-width: 1025px) {
+        @media screen and (min-width: 1024px) {
             padding-bottom: 30px;
         }
     }
@@ -42,37 +42,35 @@
             height: 400px;
         }
 
-        
-        .imgCover {
-        
-            width: 100%;
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
-            object-fit: cover;
-            @include imgShadow;
-        
-            @media screen and (min-width: 768px) {
-                height: 300px;
-            }
+        .imgCoverContainer {
+            height: 80%;
+
+            .imgCover {
             
-            @media screen and (min-width: 1024px) {
-                height: 100%;
+                width: 100%;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                object-fit: cover;
+                @include imgShadow;
+            
+                @media screen and (min-width: 768px) {
+                    height: 300px;
+                }
+                
+                @media screen and (min-width: 1024px) {
+                    height: 100%;
+                }
             }
         }
-        
 
-        .imgLogo {
-            width: 60%;
-            align-self: center;
-            padding-top: 10px;
-            padding-bottom: 10px;
-
-            @media screen and (min-width: 768px) {
+        .imgLogoContainer {
+            
+            .imgLogo {
                 width: 40%;
-            }
-
-            @media screen and (min-width: 1024px) {
-                width: 30%;
+                object-fit: cover;
+                align-self: center;
+                padding-top: 10px;
+                padding-bottom: 10px;
             }
         }
     }

@@ -65,6 +65,11 @@ h3 {
 .carousel .carousel-status {
   display: none;
 }
+@media screen and (min-width: 768px) {
+  .carousel .slider-wrapper .axis-horizontal {
+    height: 0;
+  }
+}
 .carousel .control-next.control-arrow {
   cursor: pointer;
   position: absolute;
@@ -86,8 +91,27 @@ h3 {
   transform: translateY(-50%);
   font-size: 30px;
   background-color: rgba(0, 0, 0, 0.5);
-  color: white;
+  color: black;
   z-index: 1000;
+}
+.carousel .imgContainer {
+  height: 100px;
+  border-radius: 8px;
+}
+@media screen and (min-width: 768px) {
+  .carousel .imgContainer {
+    height: 400px;
+  }
+}
+.carousel .imgContainer img {
+  border-radius: 8px;
+}
+@media screen and (min-width: 769px) {
+  .carousel .imgContainer img {
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -131,19 +155,22 @@ h3 {
   position: relative;
   overflow: auto;
 }
+@media screen and (min-width: 768px) {
+  .customModal {
+    width: 70%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .customModal {
+    width: 50%;
+  }
+}
 .customModal button {
   background-color: transparent;
   border: none;
   position: absolute;
   top: 10px;
   right: 10px;
-}
-.customModal img {
-  width: 100%;
-  height: 100%;
-  border-radius: 8px;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 .customModal .linkUrl {
   cursor: pointer;
@@ -158,6 +185,39 @@ h3 {
   right: 10px;
 }
 
+.modalSuccessOverlay {
+  background-color: rgba(0, 0, 0, 0.75);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modalSuccessForm {
+  background-color: #1c1f1e;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%;
+  height: 30%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: auto;
+}
+.modalSuccessForm button {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
 form {
   display: flex;
   flex-direction: column;
@@ -166,7 +226,7 @@ form {
   margin: auto;
   margin-bottom: 30px;
 }
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1024px) {
   form {
     width: 100%;
     padding-bottom: 20px;
@@ -177,7 +237,7 @@ form .inputsForm {
   flex-direction: column;
   gap: 10px;
 }
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1024px) {
   form .inputsForm {
     flex-direction: row;
     justify-content: center;
@@ -190,7 +250,7 @@ form .inputsForm .formText {
   flex-direction: column;
   gap: 10px;
 }
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1024px) {
   form .inputsForm .formText {
     width: 25%;
     gap: 15px;
@@ -210,7 +270,7 @@ form .inputsForm .formTextarea {
   flex-direction: column;
   gap: 10px;
 }
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1024px) {
   form .inputsForm .formTextarea {
     width: 25%;
     gap: 15px;
@@ -227,7 +287,7 @@ form .inputsForm .formTextarea textarea {
   border: none;
   color: black;
 }
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1024px) {
   form .inputsForm .formTextarea textarea {
     height: 100%;
   }
@@ -244,7 +304,7 @@ form button {
   font-size: 18px;
   font-weight: 700;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   form button {
     width: 30%;
     height: 50px;
@@ -278,7 +338,7 @@ header nav {
 header nav.expanded {
   height: 170px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   header nav.expanded {
     height: 35px;
   }
@@ -299,17 +359,18 @@ header nav .navLinks {
   flex-direction: column;
   position: absolute;
   top: 60px;
+  left: 20px;
   padding-top: 10px;
   box-sizing: border-box;
   text-align: center;
   transition: all 0.3s ease;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   header nav .navLinks {
     flex-direction: row;
     gap: 30px;
-    top: 8px;
-    right: 100px;
+    top: 10px;
+    left: 150px;
   }
 }
 header nav .navLinks a {
@@ -363,7 +424,7 @@ header nav .iconLog {
      object-fit: cover;
   border-radius: 10px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .cards img {
     height: 150px;
   }
@@ -394,21 +455,21 @@ header nav .iconLog {
   justify-items: center;
   gap: 30px;
 }
-@media screen and (min-width: 499px) {
+@media screen and (min-width: 768px) {
   .project {
     width: 80%;
     margin: auto;
     grid-template-columns: 1fr 1fr;
   }
 }
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1024px) {
   .project {
     width: 100%;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
   }
 }
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1024px) {
   .project h2 {
     padding-bottom: 30px;
   }
@@ -434,7 +495,10 @@ header nav .iconLog {
     height: 400px;
   }
 }
-.project article .imgCover {
+.project article .imgCoverContainer {
+  height: 80%;
+}
+.project article .imgCoverContainer .imgCover {
   width: 100%;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -443,30 +507,22 @@ header nav .iconLog {
   box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.3);
 }
 @media screen and (min-width: 768px) {
-  .project article .imgCover {
+  .project article .imgCoverContainer .imgCover {
     height: 300px;
   }
 }
 @media screen and (min-width: 1024px) {
-  .project article .imgCover {
+  .project article .imgCoverContainer .imgCover {
     height: 100%;
   }
 }
-.project article .imgLogo {
-  width: 60%;
+.project article .imgLogoContainer .imgLogo {
+  width: 40%;
+  -o-object-fit: cover;
+     object-fit: cover;
   align-self: center;
   padding-top: 10px;
   padding-bottom: 10px;
-}
-@media screen and (min-width: 768px) {
-  .project article .imgLogo {
-    width: 40%;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .project article .imgLogo {
-    width: 30%;
-  }
 }
 
 footer {
@@ -495,6 +551,9 @@ footer .footerIcons button .footerIcon, footer .footerIcons a .footerIcon {
   font-size: 26px;
 }
 
+.sectionMissionsProjects {
+  padding-top: 50px;
+}
 @media screen and (min-width: 1024px) {
   .sectionMissionsProjects {
     display: flex;
@@ -502,7 +561,7 @@ footer .footerIcons button .footerIcon, footer .footerIcons a .footerIcon {
   }
 }
 .sectionMissionsProjects #missions {
-  padding-top: 30px;
+  padding-top: 50px;
 }
 .sectionMissionsProjects #missions h2 {
   padding-bottom: 0;
@@ -538,6 +597,9 @@ footer .footerIcons button .footerIcon, footer .footerIcons a .footerIcon {
   }
 }
 
+#contact {
+  padding-top: 50px;
+}
 #contact h2 {
   padding-bottom: 0;
 }

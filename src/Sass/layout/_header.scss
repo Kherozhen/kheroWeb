@@ -17,7 +17,7 @@ header {
         &.expanded {
             height: 170px; 
 
-            @media screen and (min-width: 768px) {
+            @media screen and (min-width: 1024px) {
                 height: 35px;
             }
         }
@@ -41,16 +41,17 @@ header {
             flex-direction: column;
             position: absolute;
             top: 60px;
+            left: 20px;
             padding-top: 10px;
             box-sizing: border-box;
             text-align: center;
             transition: all 0.3s ease;
 
-            @media screen and (min-width: 768px) {
+            @media screen and (min-width: 1024px) {
                 flex-direction: row;
                 gap: 30px;
-                top: 8px;
-                right: 100px;
+                top: 10px;
+                left: 150px;
             }
         }
 

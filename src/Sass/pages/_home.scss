@@ -1,5 +1,6 @@
 
 .sectionMissionsProjects {
+    padding-top: 50px;
 
     @media screen and (min-width: 1024px) {
         display: flex;
@@ -8,7 +9,7 @@
 
     #missions {
 
-        padding-top: 30px;
+        padding-top: 50px;
 
         h2 {
             padding-bottom: 0;
@@ -45,8 +46,12 @@
 
 #contact {
 
+    padding-top: 50px;
+
     h2 {
         padding-bottom: 0;
+        
+        
     }
 
     p {

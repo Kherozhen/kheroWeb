@@ -29,12 +29,14 @@ function Projects () {
 
     return (
         <div className="project">
-            {jsonData.map((item, index) => (
-                <article className="projectCard" key={index.id} onClick={() => openModal(item)}>
-                    <div>
+            {jsonData.map((item, idx) => (
+                <article className="projectCard" key={idx} onClick={() => openModal(item)}>
+                    <div className="imgCoverContainer">
                         <img className="imgCover" src={item.cover} alt={item.title} />
                     </div>
-                    <img className="imgLogo" src={item.logo} alt={item.title} /> 
+                    <div className="imgLogoContainer">
+                        <img className="imgLogo" src={item.logo} alt={item.title} /> 
+                    </div>
                 </article>
             ))}  
 
@@ -50,11 +52,11 @@ function Projects () {
                     <button onClick={closeModal}>x</button>
                     <h2>{currentProject.title}</h2>
                     
-                    {/* Ajoutez le carrousel ici */}
+                    {/* carrousel */}
                     {currentProject.images && currentProject.images.length > 0 ? (
                         <Carousel showThumbs={false} dynamicHeight={true} className="carousel">
                             {currentProject.images.map((image, idx) => (
-                                <div key={idx}>
+                                <div className="imgContainer" key={idx}>
                                     <img src={image} alt={`Slide ${idx}`} />
                                 </div>
                             ))}

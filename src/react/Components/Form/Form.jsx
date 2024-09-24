@@ -1,6 +1,8 @@
 import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
+import Modal from 'react-modal';
 
+Modal.setAppElement('#root');
 
 function Form() {
 
@@ -26,6 +28,10 @@ function Form() {
         e.target.reset();
     };
 
+    // Fonction pour fermer la modal
+    const closeModal = () => {
+        setIsModalOpen(false);
+    };
 
     return (
         <>
@@ -70,6 +76,22 @@ function Form() {
                 <button type="submit">Envoyer</button>
             </form>
 
+            {/* Modal de confirmation */}
+            <Modal
+                isOpen={isModalOpen}
+                onRequestClose={closeModal}
+                contentLabel="Confirmation d'envoi"
+                className="modalSuccessForm"
+                overlayClassName="modalSuccessOverlay"
+            >
+                <h2>Victoire !</h2>
+                <div className="textModalSucess"> 
+                    <p>Votre email a été envoyé avec succès !</p>
+                    <p>Surveillez bien vos mails, je vous réponds sous 24h max</p>
+                    <p>Bonne continuation, à bientôt !</p>
+                </div>
+                <button onClick={closeModal}>x</button>
+            </Modal>
                 
         </>
     );
