@@ -118,11 +118,6 @@ h3 {
     height: 400px;
   }
 }
-@media screen and (min-width: 1024px) {
-  .carousel .imgContainer {
-    height: 500px;
-  }
-}
 .carousel .imgContainer img {
   -o-object-fit: contain;
      object-fit: contain;
@@ -181,7 +176,7 @@ h3 {
 }
 @media screen and (min-width: 1024px) {
   .customModal {
-    width: 50%;
+    width: 600px;
   }
 }
 .customModal button {
