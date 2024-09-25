@@ -40,9 +40,25 @@ h3 {
   font-size: 24px;
 }
 
+.banner {
+  max-width: 767px;
+}
+@media screen and (min-width: 768px) {
+  .banner {
+    max-width: 1023px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .banner {
+    max-width: 1440px;
+  }
+}
 .banner img {
   width: 100%;
+  height: 200px;
   margin-top: 76px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media screen and (min-width: 768px) {
   .banner img {
@@ -96,21 +112,24 @@ h3 {
 }
 .carousel .imgContainer {
   height: 100px;
-  border-radius: 8px;
 }
 @media screen and (min-width: 768px) {
   .carousel .imgContainer {
     height: 400px;
   }
 }
+@media screen and (min-width: 1024px) {
+  .carousel .imgContainer {
+    height: 500px;
+  }
+}
 .carousel .imgContainer img {
-  border-radius: 8px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 @media screen and (min-width: 769px) {
   .carousel .imgContainer img {
     height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
   }
 }
 
@@ -148,7 +167,7 @@ h3 {
   padding: 20px;
   border-radius: 8px;
   width: 100%;
-  height: 80%;
+  height: 60%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
@@ -387,6 +406,49 @@ header nav .iconLog {
   filter: brightness(0.5);
 }
 
+@media screen and (min-width: 1024px) {
+  .presentation {
+    margin: auto;
+    margin-top: 30px;
+    width: 80%;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+.presentation .presentationText {
+  border: 1px solid white;
+  margin: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1024px) {
+  .presentation .presentationText {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+  }
+}
+.presentation .presentationImg {
+  max-width: 767px;
+}
+@media screen and (min-width: 768px) {
+  .presentation .presentationImg {
+    max-width: 1023px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .presentation .presentationImg {
+    max-width: 500px;
+    margin: 20px;
+  }
+}
+.presentation .presentationImg img {
+  width: 100%;
+}
+
 .about {
   background-color: #1c1f1e;
   text-align: center;
@@ -436,7 +498,7 @@ header nav .iconLog {
 }
 .cards p {
   padding-bottom: 30px;
-  text-align: justify;
+  text-align: center;
 }
 @media screen and (min-width: 1024px) {
   .cards p {

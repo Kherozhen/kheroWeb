@@ -1,0 +1,43 @@
+.presentation {
+    
+
+    @media screen and (min-width: 1024px) {
+        margin: auto;
+        margin-top: 30px;
+        width: 80%;
+        border: 1px solid white;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    
+    .presentationText {
+        border: 1px solid white;
+        margin: 20px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+
+        @media screen and (min-width: 1024px) {
+            border: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 50%;
+        }
+    }
+    .presentationImg {
+        max-width: 767px;
+
+        @media screen and (min-width: 768px) {
+            max-width: 1023px;
+        }
+        @media screen and (min-width: 1024px) {
+            max-width: 500px;
+            margin: 20px;
+        }
+
+        img {
+            width: 100%;
+        }
+
+    }
+}

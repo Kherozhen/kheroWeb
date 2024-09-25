@@ -1,4 +1,5 @@
 
+import Presentation from "../Components/About/Presentation";
 import About from "../Components/About/About";
 import Banner from "../Components/Banner/Banner";
 import ImgBanner from '../../images/banner.avif';
@@ -17,11 +18,15 @@ function Home() {
 
   return (
     <>
-      <Banner 
-        img={ImgBanner}
-        alt="Banière"/>
-
       <main>
+        <section className="startPage">
+          <Banner 
+            img={ImgBanner}
+            alt="Banière"/>
+          <Presentation />
+          
+        </section>
+
         <section id="aboutMe">
           <About />
         </section>
