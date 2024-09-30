@@ -1,23 +1,21 @@
 .presentation {
-    
+    border: 1px solid white;
+    border-radius: 8px;
+    margin: 20px;
 
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: 768px) {
         margin: auto;
         margin-top: 30px;
         width: 80%;
-        border: 1px solid white;
         display: flex;
         flex-direction: row-reverse;
+        align-items: center;
     }
     
     .presentationText {
-        border: 1px solid white;
-        margin: 20px;
-        margin-top: 30px;
-        margin-bottom: 30px;
+        padding: 20px;
 
         @media screen and (min-width: 1024px) {
-            border: none;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -25,18 +23,27 @@
         }
     }
     .presentationImg {
-        max-width: 767px;
+        width: 100%;
+        padding-bottom: 20px;
 
         @media screen and (min-width: 768px) {
-            max-width: 1023px;
+            padding-left: 20px;
         }
         @media screen and (min-width: 1024px) {
             max-width: 500px;
-            margin: 20px;
+            padding-top: 20px;
         }
 
         img {
-            width: 100%;
+            height: 200px;
+            width: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+
+            @media screen and (min-width: 1024px) {
+                height: 350px;
+                width: 350px;
+            }
         }
 
     }

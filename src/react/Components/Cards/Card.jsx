@@ -5,8 +5,11 @@ function Card ({ img, alt, mission, text }) {
     return (
 
         <div className="cards">
-            <img src={img} alt={alt}/>
-            <p>&nbsp;&nbsp;&nbsp;&nbsp;<span>{mission}</span>{text}</p>
+            <div className="containerImgCard">
+                <img src={img} alt={alt}/>
+            </div>
+            <h3>{mission}</h3>
+            <p>{text}</p>
         </div>
 
     )

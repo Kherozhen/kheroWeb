@@ -1,8 +1,11 @@
+import { useState, useEffect } from "react";
 
 import Presentation from "../Components/About/Presentation";
 import About from "../Components/About/About";
 import Banner from "../Components/Banner/Banner";
 import ImgBanner from '../../images/banner.avif';
+import ImgBannerMobile from '../../images/bannerMobile.avif';
+
 
 import Card from "../Components/Cards/Card";
 import imgCode from "../../images/code.avif";
@@ -13,16 +16,46 @@ import Projects from "../Components/Projects/Projects";
 
 import Form from "../Components/Form/Form";
 
+import Thanks from "../Components/Thanks/Thanks";
+
 
 function Home() {
 
+    // Etat pour l'image de la bannière
+    const [currentImgBanner, setCurrentImgBanner] = useState(
+      window.innerWidth >= 768 ? ImgBanner : ImgBannerMobile
+    );
+  
+    // Fonction pour gérer les changements de taille de l'écran
+    const handleResize = () => {
+      if (window.innerWidth >= 768) {
+        setCurrentImgBanner(ImgBanner);
+      } else {
+        setCurrentImgBanner(ImgBannerMobile);
+      }
+    };
+
+    useEffect(() => {
+      //appeler la fonction une fois que la taille de l'écran est vérifié
+      window.addEventListener("resize", handleResize);
+      handleResize();
+      
+      //enleve la fonction si il en a pas besoin
+      return () => {
+        window.removeEventListener("resize", handleResize);
+      };
+    }, []);
+
   return (
     <>
+      <Banner 
+        img={currentImgBanner}
+        alt="Banière"
+        loading="lazy"
+      />
       <main>
         <section className="startPage">
-          <Banner 
-            img={ImgBanner}
-            alt="Banière"/>
+          
           <Presentation />
           
         </section>
@@ -45,21 +78,20 @@ function Home() {
               <Card 
                 img={imgCode}
                 alt="Image d'un code"
-                mission="Créer le site internet"
-                text=" qui correspond à vos envie est une priorité.
-                      Grâce à vos maquettes, vos images ou simplement vos souhaits, je ferais en sorte de répondre à 100% à votre demande."
+                mission="Créer votre site internet"
+                text="Je serais ravie de mettre mes compétences aux services de vos envies et de créer le site internet qui correspond le mieux à vos projets."
               />
               <Card 
                 img={imgBug}
                 alt="Image de cherche de bug informatique"
-                mission="Corriger les bugs."
-                text=" Repérer les problèmes d'un site en le surveillant et le mettre à jour régulièrement permet de lutter contre les bugs et garantir sa sécurité."
+                mission="Maintenance de votre site"
+                text="Un site n'est jamais totalement terminé, que ça soit pour rester la pointe de la technologie ou de la sécurité. Sauvegarde, audit, je suis là pour vous aider."
               />
               <Card 
                 img={imgOpti}
                 alt="Image de recherche d'optimisation"
-                mission="Optimiser un site internet"
-                text=" est la clé pour être visible. Faire son référencement et rester à jour des dernières nouveautés permet une grande facilité du site Web pour les visiteurs."   
+                mission="Optimiser votre site web"
+                text="Les clefs de la visibilité sont l'optimisation et le référencement. Si, ils sont bien préparer aucun visiteur aura de difficulté à vous trouver. Et si on regardait ?"   
               />
             </div>
           </div>
@@ -71,9 +103,9 @@ function Home() {
             <p>Parlons-en !</p>
             <Form />
           </div>
-
         </section>
         
+        <Thanks />
       </main>
     </>
   );

@@ -1,4 +1,4 @@
-import Khero from "../../../images/Photo_KheroWeb.avif";
+import Khero from "../../../images/Photo_KheroWeb.JPG";
 
 function Presentation () {
 
@@ -6,12 +6,14 @@ function Presentation () {
 
         <div className="presentation">
             <div className="presentationText">
-                <p>Après une reconversion de 9 mois chez OpenClassroom, une nouvelle développeuse est née, prête à affronter la totalité de vos projets.</p>
-                <p>Je vous propose donc un site simple, regroupant mes différents travaux, afin de vous montrer, l'étendu de mes capacités.</p>
-                <p>Vous pourrez, bien sûr me contacter, il suffit de vous laisser guider, je vous invite à scroller, et à bientôt pour vos idées.</p>
+                <p>Après plusieurs années dans l'enseignement pour les enfants, il était temps pour moi de changer.</p>
+                <p>J'ai testé différents métiers mais ma passion pour les ordinateurs et les jeux vidéo m'ont poussé à aller vers le domaine des développeurs.</p>
+                <p>Beaucoup de personnes autour de moi sont déjà à l'intérieur alors j'ai décidé de me lancer aussi.</p>
+                <p>Et donc... me voici ! A la fin de ma formation d'intégrateur Web chez OpenClassroom, je vous présente ce petit site internet qui vous regroupera mes compétences et mes expériences au cours de cette dernière année.</p>
+                <p>Bon visionnage, on se retrouve à la fin !</p>
             </div>
             <div className="presentationImg">
-               <img src={Khero} alt="KheroWeb" />
+               <img src={Khero} alt="KheroWeb" /> 
             </div>
         </div>
     )

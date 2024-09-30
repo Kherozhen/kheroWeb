@@ -3,10 +3,12 @@
         "id": "1",
         "title": "Ohmyfood",
         "logo": "images/Websites/Ohmyfood/logo_ohmyfood.png",
-        "cover": "images/Websites/Ohmyfood/Ohmyfood_Home.avif",
+        "cover": "images/Websites/Ohmyfood/ohmyfood_home.avif",
         "images": [
-            "images/Websites/Ohmyfood/Ohmyfood_Home.avif",
-            "images/Websites/Ohmyfood/Ohmyfood_Menu.avif"
+            "images/Websites/Ohmyfood/ohmyfood_home.avif",
+            "images/Websites/Ohmyfood/ohmyfood_home2.avif",
+            "images/Websites/Ohmyfood/ohmyfood_menu.avif",
+            "images/Websites/Ohmyfood/ohmyfood_menu2.avif"
         ],
         "description": "Site de restauration",
         "mission": "La mission était de créer un site internet pour permettre au utilisateur de commander leur repas avant leur arrivée dans le restaurant.",
@@ -17,12 +19,13 @@
         "id": "2",
         "title": "Sophie Bluel",
         "logo": "images/Websites/Sophie_Bluel/logo_Sophie.png",
-        "cover": "images/Websites/Sophie_Bluel/Sophie_Home.avif",
+        "cover": "images/Websites/Sophie_Bluel/sophieBluel_home.avif",
         "images": [
-            "images/Websites/Sophie_Bluel/Sophie_Home.avif",
-            "images/Websites/Sophie_Bluel/Sophie_Login.avif",
-            "images/Websites/Sophie_Bluel/Sophie_Editor.avif",
-            "images/Websites/Sophie_Bluel/Sophie_AddPhoto.avif"
+            "images/Websites/Sophie_Bluel/sophieBluel_home.avif",
+            "images/Websites/Sophie_Bluel/sophieBluel_home2.avif",
+            "images/Websites/Sophie_Bluel/sophieBluel_login.avif",
+            "images/Websites/Sophie_Bluel/sophieBluel_edit.avif",
+            "images/Websites/Sophie_Bluel/sophieBluel_edit2.avif"
         ],
         "description": "Site d'architecture d'intérieur",
         "mission": "La mission était de permettre à l'utilisateur du site de gérer plus facilement ses projets ainsi qu'au visiteur d'avoir une meilleure visibilité de ses travaux.",
@@ -33,11 +36,11 @@
         "id": "3",
         "title": "Kasa",
         "logo": "images/Websites/Kasa/Logo_Kasa.png",
-        "cover": "images/Websites/Kasa/Kasa_Home.avif",
+        "cover": "images/Websites/Kasa/kasa_home.avif",
         "images": [
-            "images/Websites/Kasa/Kasa_Home.avif",
-            "images/Websites/Kasa/Kasa_Logement.avif",
-            "images/Websites/Kasa/Kasa_About.avif"
+            "images/Websites/Kasa/kasa_home.avif",
+            "images/Websites/Kasa/kasa_logement.avif",
+            "images/Websites/Kasa/kasa_about.avif"
         ],
         "description": "Site d'herbergement",
         "mission": "La mission était de remettre à jour le site pour qu'il soit plus ergonomique et plus acceuillant pour les visiteurs.",

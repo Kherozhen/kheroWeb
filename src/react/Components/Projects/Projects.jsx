@@ -4,6 +4,10 @@ import Modal from "react-modal";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faGlobe } from '@fortawesome/free-solid-svg-icons';
+
 import jsonData from "../../../App.json";
 
 // Spécifiez l'élément racine pour la modale
@@ -52,34 +56,42 @@ function Projects () {
                     <button onClick={closeModal}>x</button>
                     <h2>{currentProject.title}</h2>
                     
-                    {/* carrousel */}
-                    {currentProject.images && currentProject.images.length > 0 ? (
-                        <Carousel showThumbs={false} dynamicHeight={true} className="carousel">
-                            {currentProject.images.map((image, idx) => (
-                                <div className="imgContainer" key={idx}>
-                                    <img src={image} alt={`Slide ${idx}`} />
-                                </div>
-                            ))}
-                        </Carousel>
-                    ) : (
-                        <div>
-                            <img src={currentProject.cover} alt={currentProject.title} />
-                        </div>
-                    )}
+                    <div className="carouselContainer">
+                        {/* carrousel */}
+                        {currentProject.images && currentProject.images.length > 0 ? (
+                            <Carousel showThumbs={false} dynamicHeight={true} className="carousel">
+                                {currentProject.images.map((image, idx) => (
+                                    <div className="imgContainer" key={idx}>
+                                        <img src={image} alt={`Slide ${idx}`} />
+                                    </div>
+                                ))}
+                            </Carousel>
+                        ) : (
+                            <div>
+                                <img src={currentProject.cover} alt={currentProject.title} />
+                            </div>
+                        )}
+                    </div>
                     <p>{currentProject.description}</p>
                     <p>{currentProject.mission}</p>
                     
                     <div className="linkUrl">
                         {currentProject.link && currentProject.link.trim() !== "" && (
                             <a href={currentProject.link} target="_blank" rel="noopener noreferrer">
-                                Voir le site
+                                <FontAwesomeIcon
+                                    className="modalIcon"
+                                    icon={ faGlobe }
+                                />
                             </a>
                         )}
                     </div>
                     <div className="linkGithub">
                         {currentProject.link_github && (
                             <a href={currentProject.link_github} target="_blank" rel="noopener noreferrer">
-                                Voir le code
+                                <FontAwesomeIcon
+                                    className="modalIcon"
+                                    icon={ faGithub }
+                                />
                              </a>
                         )}
                     </div>

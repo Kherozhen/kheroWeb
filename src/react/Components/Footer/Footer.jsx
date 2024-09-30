@@ -6,7 +6,7 @@ function Footer() {
     return (
 
     <footer className="footer">
-        <h3>KhéroWeb</h3>
+        <h4>KhéroWeb</h4>
         <div className='footerIcons'>
             <a href="https://github.com/Kherozhen">
                 <FontAwesomeIcon

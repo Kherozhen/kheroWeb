@@ -84,11 +84,10 @@ function Form() {
                 className="modalSuccessForm"
                 overlayClassName="modalSuccessOverlay"
             >
-                <h2>Victoire !</h2>
+                <h2>Merci !</h2>
                 <div className="textModalSucess"> 
                     <p>Votre email a été envoyé avec succès !</p>
-                    <p>Surveillez bien vos mails, je vous réponds sous 24h max</p>
-                    <p>Bonne continuation, à bientôt !</p>
+                    <p>N'oublies pas de surveillez vos mails.</p>
                 </div>
                 <button onClick={closeModal}>x</button>
             </Modal>
