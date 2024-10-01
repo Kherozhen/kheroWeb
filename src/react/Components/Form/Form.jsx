@@ -2,6 +2,9 @@ import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import Modal from 'react-modal';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCheck } from '@fortawesome/free-solid-svg-icons';
+
 Modal.setAppElement('#root');
 
 function Form() {
@@ -87,8 +90,12 @@ function Form() {
                 <h2>Merci !</h2>
                 <div className="textModalSucess"> 
                     <p>Votre email a été envoyé avec succès !</p>
-                    <p>N'oublies pas de surveillez vos mails.</p>
+                    <p>N'oubliez pas de surveiller vos mails.</p>
                 </div>
+                <FontAwesomeIcon 
+                    className='iconCheck'
+                    icon={faCheck} 
+                />
                 <button onClick={closeModal}>x</button>
             </Modal>
                 

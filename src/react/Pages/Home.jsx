@@ -1,4 +1,6 @@
 import { useState, useEffect } from "react";
+import { useSelector, useDispatch } from 'react-redux';
+import { toggleForm } from "../../Redux/Actions/ContactAction";
 
 import Presentation from "../Components/About/Presentation";
 import About from "../Components/About/About";
@@ -15,6 +17,7 @@ import imgOpti from "../../images/optimisation.avif";
 import Projects from "../Components/Projects/Projects";
 
 import Form from "../Components/Form/Form";
+import Contact from "../Components/Form/Contact";
 
 import Thanks from "../Components/Thanks/Thanks";
 
@@ -45,6 +48,15 @@ function Home() {
         window.removeEventListener("resize", handleResize);
       };
     }, []);
+
+    // Faire le switch entre le form et les coordonnées
+    const isFormVisible = useSelector((state) => state.form.isFormVisible);
+    const dispatch = useDispatch();
+
+    const handleToggle = () => {
+      dispatch(toggleForm());
+    };
+
 
   return (
     <>
@@ -101,7 +113,13 @@ function Home() {
           <div className="contactContainer">
             <h2>Une idée, une envie ?</h2>
             <p>Parlons-en !</p>
-            <Form />
+            <div>
+              <button onClick={handleToggle}>
+                {isFormVisible ? 'O' : 'X'}
+              </button>
+              {isFormVisible ? <Form /> : <Contact />}
+            {/* <Form /> */}
+            </div>
           </div>
         </section>
         

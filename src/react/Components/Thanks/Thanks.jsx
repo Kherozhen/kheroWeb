@@ -4,7 +4,7 @@ function Thanks() {
 
     return (
         <div className="thanks">
-            <p>Merci beaucoup d'être venu</p>
+            <p>Merci pour votre visite !</p>
             <p>Et à bientôt j'espère !</p>
         </div>
     )

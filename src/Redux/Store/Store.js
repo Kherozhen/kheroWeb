@@ -1,11 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit';
 
-import modalReducer from '../Reducers/ModalReducer';
+import ContactReducer from '../Reducers/ContactReducer';
 
 const Store = configureStore({
     reducer: {
-        modal: modalReducer,
-    }
+        form: ContactReducer,
+    },
 });
 
 export default Store;
