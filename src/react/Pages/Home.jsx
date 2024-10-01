@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useSelector, useDispatch } from 'react-redux';
 import { toggleForm } from "../../Redux/Actions/ContactAction";
+import { toggleButtonActive } from '../../Redux/Actions/ActiveButtonAction';
 
 import Presentation from "../Components/About/Presentation";
 import About from "../Components/About/About";
@@ -51,10 +52,18 @@ function Home() {
 
     // Faire le switch entre le form et les coordonnées
     const isFormVisible = useSelector((state) => state.form.isFormVisible);
+    const isButtonActive = useSelector((state) => state.button.isActive);
     const dispatch = useDispatch();
 
     const handleToggle = () => {
       dispatch(toggleForm());
+      console.log('Form visibility toggled:', isFormVisible);
+    };
+
+    // Activer l'animation du bouton
+
+    const handleClick = () => {
+      dispatch(toggleButtonActive());
     };
 
 
@@ -113,12 +122,21 @@ function Home() {
           <div className="contactContainer">
             <h2>Une idée, une envie ?</h2>
             <p>Parlons-en !</p>
-            <div>
-              <button onClick={handleToggle}>
-                {isFormVisible ? 'O' : 'X'}
-              </button>
+            <div className="switch">
+              <div className="buttonSwitchFormContact">
+                <div 
+                  className="button-wrap" 
+                  onClick={() => { 
+                    handleToggle(); 
+                    handleClick(); 
+                  }}
+                >
+                  <div className="button-bg">
+                    <div className={`button-switch ${isButtonActive ? 'button-active' : ''}`}></div>
+                  </div>
+                </div>
+              </div>
               {isFormVisible ? <Form /> : <Contact />}
-            {/* <Form /> */}
             </div>
           </div>
         </section>

@@ -6,15 +6,15 @@ function Contact() {
         <div className="contactText">
             <h4>KhéroWeb</h4>
             <div className="adress">
-                <p>00 Vallée de l'Honneur</p>
-                <p>00 000 Orgrimmar</p>
+                <p>10 Vallée de l'Honneur</p>
+                <p>12 345 Orgrimmar</p>
                 <p>Durotan</p>
             </div>
             <div className="mobile">
-                <p>00 00 00 00 00</p>
+                <p>Tel : 01 23 45 67 89</p>
             </div>
             <div className="email">
-                <p>kheroweb@kheroweb.web</p>
+                <p>E-mail : kheroweb@kheroweb.web</p>
             </div>
 
         </div>
