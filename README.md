@@ -1,3 +1,3 @@
-Site de présentation de KhéroWeb
+Site de présentation de KhéroWebSite
 
 Pour commencer : npm start

@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/kherowebsite/static/css/main.d46da911.css",
+    "main.js": "/kherowebsite/static/js/main.f1ac72a3.js",
+    "static/media/Photo_KheroWeb.JPG": "/kherowebsite/static/media/Photo_KheroWeb.ac18b96a5d0f1c59963b.JPG",
+    "static/media/bug.avif": "/kherowebsite/static/media/bug.f3ad059755431d8a4c52.avif",
+    "static/media/banner.avif": "/kherowebsite/static/media/banner.796b65bb634a815b3249.avif",
+    "static/media/code.avif": "/kherowebsite/static/media/code.654fb290ec54634a616f.avif",
+    "static/media/bannerMobile.avif": "/kherowebsite/static/media/bannerMobile.df51cfe96dd50ef65fee.avif",
+    "static/media/optimisation.avif": "/kherowebsite/static/media/optimisation.6c773eb289b3adb341ed.avif",
+    "index.html": "/kherowebsite/index.html",
+    "main.d46da911.css.map": "/kherowebsite/static/css/main.d46da911.css.map",
+    "main.f1ac72a3.js.map": "/kherowebsite/static/js/main.f1ac72a3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d46da911.css",
+    "static/js/main.f1ac72a3.js"
+  ]
+}
