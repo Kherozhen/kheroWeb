@@ -1,31 +1,49 @@
 
 .contactText {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    margin: auto;
 
     h4 {
         padding: 0;
     }
 
-    .adress {
-        padding-bottom: 20px;
+    .coordonnees {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
 
-        p {
-            margin: 0;
+        @media screen and (min-width: 768px) {
+            
+            
         }
-    }
-
-    .mobile {
-
-        p {
-            margin: 0;
+        @media screen and (min-width: 1024px) {
+            
         }
-    }
+        .adress {
+                padding-bottom: 20px;
 
-    .email {
+                p {
+                    margin: 0;
+                }
+            }
 
-        p {
-            margin: 0;
+        .mobileEmail {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            .mobile {
+
+                p {
+                    margin: 0;
+                }
+            }
+
+            .email {
+
+                p {
+                    margin: 0;
+                }
+            }
         }
     }
 }

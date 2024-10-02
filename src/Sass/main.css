@@ -355,22 +355,31 @@ form button:hover {
 }
 
 .contactText {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  margin: auto;
 }
 .contactText h4 {
   padding: 0;
 }
-.contactText .adress {
+.contactText .coordonnees {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.contactText .coordonnees .adress {
   padding-bottom: 20px;
 }
-.contactText .adress p {
+.contactText .coordonnees .adress p {
   margin: 0;
 }
-.contactText .mobile p {
+.contactText .coordonnees .mobileEmail {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.contactText .coordonnees .mobileEmail .mobile p {
   margin: 0;
 }
-.contactText .email p {
+.contactText .coordonnees .mobileEmail .email p {
   margin: 0;
 }
 
@@ -728,6 +737,7 @@ footer .footerIcons button .footerIcon, footer .footerIcons a .footerIcon {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 600px;
 }
 #contact .switch .buttonSwitchFormContact {
   width: 60px;
