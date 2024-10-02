@@ -4,5 +4,9 @@
     p {
         font-weight: 700;
         font-size: 18px;
+
+        a {
+            color: $backgroundButton;
+        }
     }
 }

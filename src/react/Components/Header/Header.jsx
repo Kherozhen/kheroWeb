@@ -19,7 +19,7 @@ function Header() {
         <header>
             <nav className={`menu ${isMenuOpen ? 'expanded' : ''}`}>
                 <Link to="/" className="Link">
-                    <h1>KhéroWeb</h1>
+                    <h1>KhéroWebSite</h1>
                 </Link>
                 {/* Affiche menuNav uniquement si on est sur la page d'accueil */}
                 {isHomePage && (

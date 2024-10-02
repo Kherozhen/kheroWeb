@@ -55,7 +55,6 @@ function Projects () {
                 <span className="modal">
                     <button onClick={closeModal}>x</button>
                     <h2>{currentProject.title}</h2>
-                    
                     <div className="carouselContainer">
                         {/* carrousel */}
                         {currentProject.images && currentProject.images.length > 0 ? (
@@ -72,9 +71,21 @@ function Projects () {
                             </div>
                         )}
                     </div>
-                    <p>{currentProject.description}</p>
-                    <p>{currentProject.mission}</p>
-                    
+                    <div className="text">
+                        <p>{currentProject.description}</p>
+                        <p>{currentProject.mission}</p>
+                        <div className="skillMission">
+                            {currentProject.competences && currentProject.competences.length > 0 ? (
+                                currentProject.competences.map((competence, idx) => (
+                                    <div className="imgContainer" key={idx}>
+                                        <img src={competence} alt={`Slide ${idx}`} />
+                                    </div>
+                                ))
+                            ) : (
+                                <p>Aucune compétence disponible.</p>
+                            )}
+                        </div>
+                    </div>
                     <div className="linkUrl">
                         {currentProject.link && currentProject.link.trim() !== "" && (
                             <a href={currentProject.link} target="_blank" rel="noopener noreferrer">

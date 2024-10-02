@@ -114,7 +114,7 @@ h4 {
 }
 @media screen and (min-width: 768px) {
   .carousel .imgContainer {
-    height: 400px;
+    height: 350px;
   }
 }
 .carousel .imgContainer img {
@@ -181,12 +181,24 @@ h4 {
     width: 600px;
   }
 }
+.customModal h2 {
+  margin: 0;
+}
 .customModal button {
   background-color: transparent;
   border: none;
   position: absolute;
   top: 10px;
   right: 10px;
+}
+.customModal .text {
+  padding-top: 20px;
+}
+.customModal .text .skillMission {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
 .customModal .linkUrl {
   cursor: pointer;
@@ -476,6 +488,11 @@ header nav .iconLog {
     width: 50%;
   }
 }
+.presentation .presentationText h2 {
+  padding: 0;
+  margin-bottom: 0;
+  font-size: 20px;
+}
 .presentation .presentationImg {
   width: 100%;
   padding-bottom: 20px;
@@ -648,6 +665,9 @@ header nav .iconLog {
 .thanks p {
   font-weight: 700;
   font-size: 18px;
+}
+.thanks p a {
+  color: #00ffbf;
 }
 
 footer {

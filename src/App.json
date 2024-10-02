@@ -12,6 +12,12 @@
         ],
         "description": "Site de restauration",
         "mission": "La mission était de créer un site internet pour permettre au utilisateur de commander leur repas avant leur arrivée dans le restaurant.",
+        "competences": [
+            "images/Logos/logo_html.png",
+            "images/Logos/logo_css.png",
+            "images/Logos/logo_sass.png"
+        ],
+    
         "link": "https://kherozhen.github.io/Ohmyfood/", 
         "link_github": "https://github.com/Kherozhen/Ohmyfood"
     },
@@ -29,6 +35,11 @@
         ],
         "description": "Site d'architecture d'intérieur",
         "mission": "La mission était de permettre à l'utilisateur du site de gérer plus facilement ses projets ainsi qu'au visiteur d'avoir une meilleure visibilité de ses travaux.",
+        "competences": [
+            "images/Logos/logo_javascript.png",
+            "images/Logos/logo_nodejs.jpg",
+            "images/Logos/logo_swagger.png"
+        ],
         "link": "", 
         "link_github": "https://github.com/Kherozhen/PortFolio-SophieBluel"
     },
@@ -43,7 +54,10 @@
             "images/Websites/Kasa/kasa_about.avif"
         ],
         "description": "Site d'herbergement",
-        "mission": "La mission était de remettre à jour le site pour qu'il soit plus ergonomique et plus acceuillant pour les visiteurs.",
+        "mission": "La mission était de remettre à jour le site pour qu'il soit plus ergonomique et plus accueillant pour les visiteurs.",
+        "competences": [
+            "images/Logos/logo_react.png"
+        ],
         "link": "", 
         "link_github": "https://github.com/Kherozhen/Kasa_Agence_Immo"
     }

@@ -4,7 +4,7 @@ function Contact() {
 
     return (
         <div className="contactText">
-            <h4>KhéroWeb</h4>
+            <h4>KhéroWebSite</h4>
             <div className="coordonnees">
                 <div className="adress">
                     <p>10 Vallée des Esprits</p>
