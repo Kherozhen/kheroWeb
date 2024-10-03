@@ -41,7 +41,7 @@ function Form() {
             <form className="form" ref={formContact}  onSubmit={sendEmail}>
                 <div className='inputsForm'>
                     <div className="formText">
-                        <label htmlFor="nom">Nom* </label>
+                        <label htmlFor="nom">Nom </label>
                         <input
                             type="text"
                             id="nom"
@@ -49,7 +49,7 @@ function Form() {
                             required
                         >  
                         </input>
-                        <label htmlFor="prenom">Prénom* </label>
+                        <label htmlFor="prenom">Prénom </label>
                         <input
                             type="text"
                             id="prenom"
@@ -57,7 +57,7 @@ function Form() {
                             required
                         >  
                         </input>
-                        <label htmlFor="email">Email* </label>
+                        <label htmlFor="email">Email </label>
                         <input
                             type="email"
                             id="email"
@@ -67,7 +67,7 @@ function Form() {
                         </input>
                     </div>
                     <div className="formTextarea">
-                        <label htmlFor="message">Message* </label>
+                        <label htmlFor="message">Message </label>
                         <textarea 
                             id="message" 
                             name="message" 

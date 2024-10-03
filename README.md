@@ -1,3 +1,12 @@
-Site de présentation de KhéroWebSite
+KhéroWebSite - Portfolio
 
-Pour commencer : npm start
+
+Une fois téléchargé ou cloné, sur VsCode :
+
+" npm start " dans un nouveau terminal.
+
+Le visuel du site est hébergé sur Vercel à l'adresse suivante : https://kherowebsite.vercel.app/
+
+Bon visionnage
+
+Khéro

@@ -372,17 +372,7 @@ form button:hover {
 }
 .contactText h4 {
   padding: 0;
-}
-.contactText .coordonnees {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-.contactText .coordonnees .adress {
-  padding-bottom: 20px;
-}
-.contactText .coordonnees .adress p {
-  margin: 0;
+  padding-bottom: 30px;
 }
 .contactText .coordonnees .mobileEmail {
   display: flex;
