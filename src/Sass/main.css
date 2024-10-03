@@ -67,6 +67,7 @@ h4 {
 }
 @media screen and (min-width: 1024px) {
   .banner img {
+    max-width: 1960px;
     height: 500px;
     -o-object-fit: cover;
        object-fit: cover;
