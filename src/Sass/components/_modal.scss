@@ -42,6 +42,7 @@
         position: absolute;
         top: 10px;
         right: 10px;
+        font-size: 20px;
     }
     .text {
         padding-top: 20px;
@@ -58,18 +59,30 @@
         cursor: pointer;
         position: absolute;
         bottom: 20px;
-        left: 50px;
+        left: 30px;
+
+        @media screen and (min-width: 768px) {
+            left: 50px;
+        }
     }
 
     .linkGithub {
         cursor: pointer;
         position: absolute;
         bottom: 20px;
-        right: 50px;
+        right: 30px;
+
+        @media screen and (min-width: 768px) {
+            right: 50px;
+        }
     }
 
     .modalIcon {
         font-size: 20px;
+
+        @media screen and (min-width: 768px) {
+            font-size: 50px;
+        }
     }
 }
 
